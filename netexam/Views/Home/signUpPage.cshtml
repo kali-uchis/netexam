@@ -1,0 +1,17 @@
+﻿
+    @model netexam.Models.user
+
+
+    ViewData["Title"] = "Signup";
+    <form asp-action="signUpUser" method="post">
+      
+            EmailId:
+        @Html.TextBoxFor(l => l.Email, new { @class="form-control"})
+            Password:
+        @Html.PasswordFor(l => l.Password, new { @class="form-control"})
+   
+        <input type="submit" value="Submit" />
+    </form>
+
+    
+}

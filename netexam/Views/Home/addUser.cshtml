@@ -1,0 +1,21 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+    @model netexam.Models.user
+
+
+    ViewData["Title"] = "Add User";
+    <form asp-action="signUpPage" method="post">
+ 
+        EmailId:
+        @Html.TextBoxFor(l => l.Email, new { @class="form-control"})
+        Password:
+        @Html.PasswordFor(l => l.Password, new { @class="form-control"})
+
+        <input type="submit" value="Submit" />
+    </form>
+
+
+}
